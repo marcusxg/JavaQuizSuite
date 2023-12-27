@@ -8,6 +8,11 @@ public class MathTest {
         mathQuestions();
     }
 
+    /**
+     * <p>Gives the user a series of Mathematical questions including 2 step equations.</p>
+     * <p>for statement will count the amount of times a user has answered a question correctly.</p>
+     * @author marcusxg on GitHub
+     */
     public static void mathQuestions() {
         Scanner scan = new Scanner(System.in);
         System.out.println("What's your name?: ");
@@ -20,7 +25,6 @@ public class MathTest {
         };
 
         String[] answers = {"1", "0.3"};
-
         for (int i = 0; i < questions.length; i++) {
             System.out.print(questions[i]);
             String userAnswer = scan.nextLine();

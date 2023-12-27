@@ -2,6 +2,11 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Calc {
+    /**
+     * <p>Simple calculator method which can perform basic arithmetic operations.
+     * To be used with Math Test class</p>
+     * @author marcusxg on GitHub
+     */
     public static void calculator() {
         Scanner scan = new Scanner(System.in);
         System.out.println("enter number: ");
