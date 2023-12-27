@@ -33,7 +33,6 @@ public class MathTest {
                 System.out.println("Incorrect");
             }
             System.out.println("Score: " + Storage.score.size() + " out of 2" + "\n");
-            System.out.println("Test over... \n");
         }
 
         Main.repeat_question();
