@@ -2,6 +2,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
+    private static int attempts = 0;
     public static void main(String[] args) {
         user();
         repeat_question();
@@ -16,7 +17,12 @@ public class Main {
         String answer_2 = scan_2.nextLine();
 
         if (!Objects.equals(answer, "Washington") || !Objects.equals(answer_2, "1776")) {
+            attempts++;
             System.out.println("Incorrect");
+            if (attempts >= 3) {
+                System.out.println("This account has been locked. Please contact an administrator");
+                System.exit(0);
+            }
             user();
         }
 
